@@ -170,8 +170,187 @@ body {
 
 /* Tablet horizontal */
 @media screen and (min-width: 1024px) {
-    .header, .main, .footer {
+    body {
+        font-size: 1.15rem;
+    }
+    .header {
+        height: 56px;
+    }
+    .project-title--tablet {
+        font-size: 1.5rem;
         padding: 0;
+        background: #e5e5e5;
+        border-bottom: 8px solid #fff;
+    }
+    .project-title__text {
+        padding: 16px 0 16px 0;
+        font-size: 1.5rem;
+    }
+    .main-horizontal {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        min-height: 340px;
+        background: #fff;
+    }
+    .main-horizontal__left, .main-horizontal__center, .main-horizontal__right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-horizontal__left {
+        flex: 1 1 28%;
+        background: #f72608;
+        min-width: 220px;
+        padding: 0;
+    }
+    .claim--horizontal {
+        background: transparent;
+        color: #fff;
+        text-align: left;
+        font-size: 2.1rem;
+        font-weight: bold;
+        margin: 32px 0 0 0;
+        padding: 0 0 24px 0;
+        width: 100%;
+        max-width: 320px;
+    }
+    .main-horizontal__decor-left {
+        background: #d9d9d9;
+        width: 100%;
+        height: 140px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .main-horizontal__center {
+        flex: 1 1 44%;
+        min-width: 320px;
+        background: #fff;
+        padding: 0 16px;
+    }
+    .hero__image {
+        width: 100%;
+        height: 260px;
+        background: #d9d9d9;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    .main-horizontal__right {
+        flex: 1 1 28%;
+        background: #fff;
+        min-width: 180px;
+        padding: 0;
+    }
+    .main-horizontal__decor-right {
+        background: #111;
+        width: 100%;
+        height: 260px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    .logo-bar {
+        width: 100%;
+        background: #f72608;
+        color: #fff;
+        text-align: center;
+        font-size: 2.2rem;
+        font-weight: bold;
+        letter-spacing: 0.1em;
+        padding: 18px 0 8px 0;
+        font-family: 'Arial Black', Arial, sans-serif;
+        border-bottom: 8px solid #fff;
+    }
+    .central-horizontal {
+        width: 100%;
+        background: #fff;
+    }
+    .central-horizontal__top {
+        width: 100%;
+        background: #fff;
+    }
+    .central-horizontal__band {
+        width: 100%;
+        height: 40px;
+        background: repeating-linear-gradient(90deg, #fff 0 24px, #111 24px 48px);
+    }
+    .central-horizontal__bottom {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        min-height: 220px;
+        background: #fff;
+    }
+    .central-horizontal__left {
+        flex: 1 1 40%;
+        background: #d9d9d9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 220px;
+        padding: 32px 0;
+    }
+    .central-horizontal__decor {
+        width: 100%;
+        height: 160px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .central-horizontal__right {
+        flex: 1 1 60%;
+        background: #f7a8b8;
+        padding: 32px 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .about {
+        background: transparent;
+        color: #111;
+        padding: 0;
+        font-size: 1.1rem;
+    }
+    .about h2 {
+        color: #f72608;
+        font-size: 1.3rem;
+        margin-bottom: 8px;
+    }
+    .about__text {
+        color: #111;
+        font-size: 1rem;
+        margin-top: 8px;
+    }
+    .footer-horizontal {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 120px;
+    }
+    .footer-horizontal__left {
+        flex: 1 1 50%;
+        background: #111;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-horizontal__right {
+        flex: 1 1 50%;
+        background: #d9d9d9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer__bottom {
+        text-align: center;
+        letter-spacing: 0.2em;
+        font-size: 1.1rem;
+        padding: 18px 0 20px 0;
+        color: #111;
+        background: #fff;
     }
 }
 
