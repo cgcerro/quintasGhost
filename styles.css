@@ -1,0 +1,158 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #fff;
+    color: #111;
+}
+
+/* Estilos base para móvil (mobile first) */
+.header, .main, .footer {
+    width: 100%;
+    padding: 1rem;
+}
+
+/* Media queries para diferentes tamaños de pantalla */
+/* Tablet vertical */
+@media screen and (min-width: 768px) {
+    .header, .main, .footer {
+        padding: 1.5rem;
+    }
+}
+
+/* Tablet horizontal */
+@media screen and (min-width: 1024px) {
+    .header, .main, .footer {
+        padding: 2rem;
+    }
+}
+
+/* Escritorio */
+@media screen and (min-width: 1280px) {
+    .header, .main, .footer {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2.5rem;
+    }
+}
+
+.header {
+    background: #000;
+    position: relative;
+    padding: 0;
+}
+.header__decor {
+    height: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+}
+.header__logo {
+    background: #f72608;
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    padding: 16px 0 8px 0;
+    font-family: 'Arial Black', Arial, sans-serif;
+}
+
+.hero__image {
+    width: 100%;
+    height: 220px;
+    background: #d9d9d9;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.project-title {
+    background: #fff;
+    text-align: center;
+    padding: 12px 0 0 0;
+}
+.project-title__text {
+    font-size: 1.1rem;
+    font-style: italic;
+    margin-bottom: 8px;
+}
+.project-title__decor {
+    height: 24px;
+    background: repeating-linear-gradient(90deg, #fff 0 12px, #111 12px 24px);
+}
+
+.claim {
+    background: #f7a8b8;
+    text-align: center;
+    padding: 24px 0;
+}
+.claim h2 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #111;
+}
+
+.central-decor {
+    background: #d9d9d9;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about {
+    background: #f72608;
+    color: #111;
+    padding: 24px 16px;
+}
+.about h2 {
+    color: #111;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-family: 'Arial Black', Arial, sans-serif;
+}
+.about__text {
+    color: #111;
+    font-size: 1rem;
+    margin-top: 8px;
+}
+
+.footer {
+    background: #fff;
+    color: #111;
+    font-size: 1rem;
+}
+.footer__top {
+    display: flex;
+    height: 64px;
+}
+.footer__decor {
+    background: #000;
+    width: 50%;
+    height: 100%;
+}
+.footer__icon {
+    background: #f7a8b8;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer__bottom {
+    text-align: center;
+    letter-spacing: 0.2em;
+    font-size: 1rem;
+    padding: 12px 0 16px 0;
+    color: #111;
+}
