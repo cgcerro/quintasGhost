@@ -7,56 +7,204 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- LAYOUT MÓVIL (menos de 768px) -->
+    <div class="layout-mobile">
+        <header class="header-mobile">
+            <div class="header__decor-mobile">
+                <!-- Estrellas decorativas -->
+            </div>
+            <div class="header__logo-mobile">
+                <!-- Logo MARTIRIO FILMS -->
+            </div>
+        </header>
+        <section class="hero-mobile">
+            <div class="hero__image-mobile">
+                <!-- Imagen principal -->
+                <!-- Triángulo decorativo -->
+            </div>
+        </section>
+        <section class="project-title-mobile">
+            <div class="project-title__text-mobile">"THE QUINTA'S GHOST"</div>
+            <div class="project-title__decor-mobile">
+                <!-- Banda decorativa de semicírculos -->
+            </div>
+        </section>
+        <section class="claim-mobile">
+            <h2>ANIMATION IN 35MM</h2>
+        </section>
+        <section class="central-decor-mobile">
+            <!-- Figura geométrica central -->
+        </section>
+        <section class="about-mobile">
+            <h2>HOLA!<br>WE ARE MARTIRIO</h2>
+            <div class="about__text-mobile">
+                We are an independent film production company born out of the need to create a meeting point between genre narratives, auteur cinema, and animation. A kind of artistic trench from which to defend new and authentic voices and tell their truths in a universally resonant way using cutting edge visual storytelling.<br><br>
+                Founded by award-winning James A. Castillo, our mission is to be the starting point for a future where animation transcends generational and disciplinary boundaries, embracing the avant-garde in all its forms. We aim to challenge, provoque and entertain.
+            </div>
+        </section>
+        <footer class="footer-mobile">
+            <div class="footer__top-mobile">
+                <div class="footer__decor-mobile">
+                    <!-- Decoración negra -->
+                </div>
+                <div class="footer__icon-mobile">
+                    <!-- Icono rosa -->
+                </div>
+            </div>
+            <div class="footer__bottom-mobile">
+                WEBSITE UNDER CONSTRUCTION
+            </div>
+        </footer>
+    </div>
+
+    <!-- HEADER GLOBAL -->
     <header class="header">
         <div class="header__decor">
             <!-- Estrellas decorativas -->
         </div>
     </header>
 
-    <div class="project-title project-title--tablet">
-        <div class="project-title__text">"THE QUINTA'S GHOST"</div>
-    </div>
-
-    <div class="main-horizontal">
-        <div class="main-horizontal__left">
-            <section class="claim claim--horizontal">
-                <h2>ANIMATION IN 35MM</h2>
-            </section>
-            <div class="main-horizontal__decor-left">
-                <!-- Decorativo geométrico izquierdo (ojo/estrella sobre gris) -->
-            </div>
+    <!-- TABLET VERTICAL (768-1023px) -->
+    <div class="layout-tablet-vertical">
+        <div class="project-title project-title--tablet">
+            <div class="project-title__text">"THE QUINTA'S GHOST"</div>
         </div>
-        <div class="main-horizontal__center">
+        <section class="hero hero--tablet-vertical">
             <div class="hero__image">
                 <!-- Imagen principal -->
                 <!-- Triángulo decorativo -->
             </div>
+        </section>
+        <div class="logo-bar logo-bar--tablet-vertical">
+            MARTIRIO FILMS
         </div>
-        <div class="main-horizontal__right">
-            <div class="main-horizontal__decor-right">
-                <!-- Decorativo geométrico derecho (triángulo negro con estrella blanca) -->
-            </div>
-        </div>
-    </div>
-
-    <div class="logo-bar">
-        MARTIRIO FILMS
-    </div>
-
-    <div class="central-horizontal">
-        <div class="central-horizontal__top">
-            <div class="central-horizontal__band">
-                <!-- Banda decorativa de semicírculos -->
-            </div>
-        </div>
-        <div class="central-horizontal__bottom">
-            <div class="central-horizontal__left">
-                <div class="central-horizontal__decor">
-                    <!-- Decorativo geométrico (círculo rosa sobre gris) -->
+        <div class="main-tablet-vertical">
+            <div class="main-tablet-vertical__left">
+                <div class="central-decor central-decor--tablet-vertical">
+                    <!-- Figura geométrica central -->
                 </div>
             </div>
-            <div class="central-horizontal__right">
-                <section class="about">
+            <div class="main-tablet-vertical__right">
+                <section class="about about--tablet-vertical">
+                    <h2>HOLA!<br>WE ARE MARTIRIO</h2>
+                    <div class="about__text">
+                        We are an independent film production company born out of the need to create a meeting point between genre narratives, auteur cinema, and animation. A kind of artistic trench from which to defend new and authentic voices and tell their truths in a universally resonant way using cutting edge visual storytelling.<br><br>
+                        Founded by award-winning James A. Castillo, our mission is to be the starting point for a future where animation transcends generational and disciplinary boundaries, embracing the avant-garde in all its forms. We aim to challenge, provoque and entertain.
+                    </div>
+                </section>
+                <section class="claim claim--tablet-vertical">
+                    <h2>ANIMATION IN 35MM</h2>
+                </section>
+            </div>
+        </div>
+        <footer class="footer footer--tablet-vertical">
+            <div class="footer__top footer__top--grid">
+                <div class="footer__decor">
+                    <!-- Decoración geométrica 1 -->
+                </div>
+                <div class="footer__icon">
+                    <!-- Decoración geométrica 2 -->
+                </div>
+                <div class="footer__decor">
+                    <!-- Decoración geométrica 3 -->
+                </div>
+                <div class="footer__icon">
+                    <!-- Icono rosa -->
+                </div>
+            </div>
+            <div class="footer__bottom">
+                WEBSITE UNDER CONSTRUCTION
+            </div>
+        </footer>
+    </div>
+
+    <!-- TABLET HORIZONTAL (1024-1279px) -->
+    <div class="layout-tablet-horizontal">
+        <div class="project-title project-title--tablet-horizontal">
+            <div class="project-title__text">"THE QUINTA'S GHOST"</div>
+        </div>
+        <div class="main-horizontal">
+            <div class="main-horizontal__left">
+                <section class="claim claim--horizontal">
+                    <h2>ANIMATION IN 35MM</h2>
+                </section>
+                <div class="main-horizontal__decor-left">
+                    <!-- Decorativo geométrico izquierdo (ojo/estrella sobre gris) -->
+                </div>
+            </div>
+            <div class="main-horizontal__center">
+                <div class="hero__image">
+                    <!-- Imagen principal -->
+                    <!-- Triángulo decorativo -->
+                </div>
+            </div>
+            <div class="main-horizontal__right">
+                <div class="main-horizontal__decor-right">
+                    <!-- Decorativo geométrico derecho (triángulo negro con estrella blanca) -->
+                </div>
+            </div>
+        </div>
+        <div class="logo-bar logo-bar--tablet-horizontal">
+            MARTIRIO FILMS
+        </div>
+        <div class="central-horizontal">
+            <div class="central-horizontal__top">
+                <div class="central-horizontal__band">
+                    <!-- Banda decorativa de semicírculos -->
+                </div>
+            </div>
+            <div class="central-horizontal__bottom">
+                <div class="central-horizontal__left">
+                    <div class="central-horizontal__decor">
+                        <!-- Decorativo geométrico (círculo rosa sobre gris) -->
+                    </div>
+                </div>
+                <div class="central-horizontal__right">
+                    <section class="about about--tablet-horizontal">
+                        <h2>HOLA!<br>WE ARE MARTIRIO</h2>
+                        <div class="about__text">
+                            We are an independent film production company born out of the need to create a meeting point between genre narratives, auteur cinema, and animation. A kind of artistic trench from which to defend new and authentic voices and tell their truths in a universally resonant way using cutting edge visual storytelling.<br><br>
+                            Founded by award-winning James A. Castillo, our mission is to be the starting point for a future where animation transcends generational and disciplinary boundaries, embracing the avant-garde in all its forms. We aim to challenge, provoque and entertain.
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <footer class="footer footer--tablet-horizontal">
+            <div class="footer-horizontal">
+                <div class="footer-horizontal__left">
+                    <!-- Decorativo geométrico (negro con semicírculos blancos) -->
+                </div>
+                <div class="footer-horizontal__right">
+                    <!-- Decorativo geométrico (gris claro con icono rosa) -->
+                </div>
+            </div>
+            <div class="footer__bottom">
+                WEBSITE UNDER CONSTRUCTION
+            </div>
+        </footer>
+    </div>
+
+    <!-- ESCRITORIO (1280px o más) -->
+    <div class="layout-desktop">
+        <div class="project-title project-title--desktop">
+            <div class="project-title__text">"EL FANTASMA DE LA QUINTA"</div>
+        </div>
+        <div class="main-desktop">
+            <div class="main-desktop__left">
+                <!-- Decorativo geométrico grande (M roja y negra) -->
+            </div>
+            <div class="main-desktop__center">
+                <div class="hero__image">
+                    <!-- Imagen principal -->
+                    <!-- Triángulo decorativo -->
+                </div>
+                <div class="logo-bar logo-bar--desktop">
+                    MARTIRIO FILMS
+                </div>
+            </div>
+            <div class="main-desktop__right">
+                <section class="about about--desktop">
                     <h2>HOLA!<br>WE ARE MARTIRIO</h2>
                     <div class="about__text">
                         We are an independent film production company born out of the need to create a meeting point between genre narratives, auteur cinema, and animation. A kind of artistic trench from which to defend new and authentic voices and tell their truths in a universally resonant way using cutting edge visual storytelling.<br><br>
@@ -65,20 +213,32 @@
                 </section>
             </div>
         </div>
+        <div class="band-desktop">
+            <!-- Banda decorativa de semicírculos -->
+        </div>
+        <div class="bottom-desktop">
+            <div class="bottom-desktop__left">
+                <section class="claim claim--desktop">
+                    <h2>ANIMATION IN 35MM</h2>
+                </section>
+            </div>
+            <div class="bottom-desktop__center">
+                <!-- Decorativo geométrico (ojo/estrella sobre gris) -->
+            </div>
+            <div class="bottom-desktop__right">
+                <div class="bottom-desktop__decor1">
+                    <!-- Decorativo geométrico (negro con semicírculos blancos) -->
+                </div>
+                <div class="bottom-desktop__decor2">
+                    <!-- Decorativo geométrico (gris claro con icono rosa) -->
+                </div>
+            </div>
+        </div>
+        <footer class="footer footer--desktop">
+            <div class="footer__bottom footer__bottom--desktop">
+                WEBSITE UNDER CONSTRUCTION
+            </div>
+        </footer>
     </div>
-
-    <footer class="footer">
-        <div class="footer-horizontal">
-            <div class="footer-horizontal__left">
-                <!-- Decorativo geométrico (negro con semicírculos blancos) -->
-            </div>
-            <div class="footer-horizontal__right">
-                <!-- Decorativo geométrico (gris claro con icono rosa) -->
-            </div>
-        </div>
-        <div class="footer__bottom">
-            WEBSITE UNDER CONSTRUCTION
-        </div>
-    </footer>
 </body>
 </html>
