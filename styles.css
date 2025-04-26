@@ -584,6 +584,21 @@ body {
         display: block;
         width: 100%;
     }
+    .hero-mobile {
+        position: relative;
+    }
+    .hero__play-mobile {
+        position: absolute;
+        top: 50%;
+        color: #fff;
+        left: 50%;
+        font-size: 50px;
+        transform: translate(-50%, -50%);
+    }
+    .hero__play-mobile a, .hero__play-mobile a:visited {
+        color: #fff;
+        text-decoration: none;
+    }
     .hero__image-mobile {
         width: 100%;
         background: #d9d9d9;
