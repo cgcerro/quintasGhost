@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Goya</title>
+    <title>The Quinta's Ghost - Martirio Films</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
 </head>
 <body>
     <!-- LAYOUT MÓVIL (menos de 768px) -->
@@ -15,16 +16,21 @@
             </div>
             <div class="header__logo-mobile">
                 <!-- Logo MARTIRIO FILMS -->
+                <video id="logo-video"  muted  playsinline style="width:100%; height:auto;">
+                    <source src="videos/logo.webm" type="video/mp4">
+                    Tu navegador no soporta videos HTML5.
+                </video>
             </div>
         </header>
         <section class="hero-mobile">
             <div class="hero__image-mobile">
                 <!-- Imagen principal -->
+                 <img src="images/goya.jpeg" alt="Goya pintando">
                 <!-- Triángulo decorativo -->
             </div>
         </section>
         <section class="project-title-mobile">
-            <div class="project-title__text-mobile">"THE QUINTA'S GHOST"</div>
+            <div class="project-title__text-mobile"><a href="https://www.jamesacastillo.com/martirio">"THE QUINTA'S GHOST"</a></div>
             <div class="project-title__decor-mobile">
                 <!-- Banda decorativa de semicírculos -->
             </div>
@@ -37,6 +43,7 @@
         </section>
         <section class="about-mobile">
             <h2>HOLA!<br>WE ARE MARTIRIO</h2>
+            <hr id="hr-about-mobile">
             <div class="about__text-mobile">
                 We are an independent film production company born out of the need to create a meeting point between genre narratives, auteur cinema, and animation. A kind of artistic trench from which to defend new and authentic voices and tell their truths in a universally resonant way using cutting edge visual storytelling.<br><br>
                 Founded by award-winning James A. Castillo, our mission is to be the starting point for a future where animation transcends generational and disciplinary boundaries, embracing the avant-garde in all its forms. We aim to challenge, provoque and entertain.
@@ -57,12 +64,7 @@
         </footer>
     </div>
 
-    <!-- HEADER GLOBAL -->
-    <header class="header">
-        <div class="header__decor">
-            <!-- Estrellas decorativas -->
-        </div>
-    </header>
+   
 
     <!-- TABLET VERTICAL (768-1023px) -->
     <div class="layout-tablet-vertical">

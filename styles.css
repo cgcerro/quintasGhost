@@ -1,12 +1,44 @@
+/**
+fonts
+*/
+@font-face {
+    font-family: 'FuturaNew';
+    src: url('./fonts/FuturaNew/FuturaNewBook-Reg.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'FuturaNew';
+    src: url('./fonts/FuturaNew/FuturaNewBook-Obl.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'FuturaNew';
+    src: url('./fonts/FuturaNew/FuturaNewBold-Reg.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'FuturaNew';
+    src: url('./fonts/FuturaNew/FuturaNewBold-Obl.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+  }
+
 /* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'FuturaNew',Arial, sans-serif;
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'FuturaNew', Arial, sans-serif;
     line-height: 1.6;
     background: #fff;
     color: #111;
@@ -540,32 +572,46 @@ body {
     }
     .header__logo-mobile {
         background: #f72608;
-        color: #fff;
-        text-align: center;
-        font-size: 2rem;
-        font-weight: bold;
-        letter-spacing: 0.1em;
-        padding: 16px 0 8px 0;
-        font-family: 'Arial Black', Arial, sans-serif;
+        padding:  0;
+        height: 100px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .header__logo-mobile video {
+        display: block;
+        width: 100%;
     }
     .hero__image-mobile {
         width: 100%;
-        height: 220px;
         background: #d9d9d9;
         position: relative;
         display: flex;
         align-items: flex-end;
         justify-content: center;
     }
+    .hero__image-mobile img {
+        width: 100%;
+        height: auto;
+    }
+    
     .project-title-mobile {
         background: #fff;
         text-align: center;
-        padding: 12px 0 0 0;
+        padding: 0;
     }
     .project-title__text-mobile {
-        font-size: 1.1rem;
-        font-style: italic;
-        margin-bottom: 8px;
+        font-size: 1.2rem;
+        padding: 8px 0 8px 8px;
+        background: #d9d9d9;
+        letter-spacing: 0.7rem;
+        text-align: center;
+    }
+    .project-title__text-mobile a, .project-title__text-mobile a:visited {
+        color:#000;
+        text-decoration: none;
     }
     .project-title__decor-mobile {
         height: 24px;
@@ -574,12 +620,17 @@ body {
     .claim-mobile {
         background: #f7a8b8;
         text-align: center;
-        padding: 24px 0;
+        padding: 0;
     }
-    .claim-mobile h2 {
-        font-size: 1.6rem;
+    .claim-mobile h2   {
+        font-size: 2.2rem;
         font-weight: bold;
         color: #111;
+        font-style: italic;
+        width: 60%;
+        text-align: left;
+        padding: 20px;
+        line-height: 2.2rem;
     }
     .central-decor-mobile {
         background: #d9d9d9;
@@ -595,15 +646,28 @@ body {
     }
     .about-mobile h2 {
         color: #111;
-        font-size: 1.4rem;
+        font-size: 2.3rem;
         font-weight: bold;
         margin-bottom: 8px;
-        font-family: 'Arial Black', Arial, sans-serif;
+        font-family: 'FuturaNew';
+        font-style: italic;
+        line-height: 2.3rem;
+        padding: 0 0 0 8px;
+    }
+    #hr-about-mobile {
+        border: none;
+        height: 2px;
+        background: #fff;
+        color: #fff;
+        width: 20%;
+        margin: 0 0 0 8px;
     }
     .about__text-mobile {
         color: #111;
-        font-size: 1rem;
+        font-size: 1.15rem;
         margin-top: 8px;
+        line-height: 1.3rem;
+        padding: 0 0 0 8px;
     }
     .footer-mobile {
         background: #fff;
@@ -632,6 +696,7 @@ body {
         letter-spacing: 0.2em;
         font-size: 1rem;
         padding: 12px 0 16px 0;
-        color: #111;
+        color: #fff;
+        background: #000;
     }
 }
