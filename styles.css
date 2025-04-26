@@ -654,12 +654,51 @@ body {
         align-items: center;
         justify-content: center;
     }
+
     .about-mobile {
         background: #f72608;
         color: #111;
         padding: 24px 16px;
+        display: flex ;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow-y: visible;
+        height: 26rem;
     }
-    .about-mobile h2 {
+    .about-mobile .about-mobile__primary h1 {
+        font-size: 200px;
+        line-height: 180px;
+        font-family: 'FuturaNew';
+        font-style: italic;
+    }
+    .about-mobile .about-mobile__primary #arrow-mobile  {
+        font-size: 100px;
+        text-align: right;
+        margin: 0;
+        position: relative;
+        line-height: 50px;
+        cursor: pointer;
+    }
+   
+  
+    .about-mobile .about-mobile__secondary {
+        position: absolute;
+        top: 0;
+        right: -100%;
+        padding: 1rem;
+        width: 100%;
+        height: 500px;
+        transition: right 0.8s ease;
+        overflow-y: visible;
+    }
+
+    .about-mobile .about-mobile__secondary.active {
+        right: 0;
+    }
+
+    .about-mobile .about-mobile__secondary h2 {
         color: #111;
         font-size: 2.3rem;
         font-weight: bold;
@@ -669,7 +708,7 @@ body {
         line-height: 2.3rem;
         padding: 0 0 0 8px;
     }
-    #hr-about-mobile {
+    .about-mobile__secondary #hr-about-mobile {
         border: none;
         height: 2px;
         background: #fff;
@@ -677,7 +716,7 @@ body {
         width: 20%;
         margin: 0 0 0 8px;
     }
-    .about__text-mobile {
+    .about-mobile__secondary .about__text-mobile {
         color: #111;
         font-size: 1.15rem;
         margin-top: 8px;
