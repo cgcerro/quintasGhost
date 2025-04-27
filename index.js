@@ -1,6 +1,7 @@
 window.addEventListener('load', function() {
     videoLogoPlay();
     arrowMobile();
+    arrowTabletVertical();
     videoTrailer();
 });
   
@@ -8,6 +9,8 @@ window.addEventListener('load', function() {
 videoLogoPlay = () => {
     var video = document.getElementById('logo-video');
     video.play();
+    var videoTabletVertical = document.getElementById('logo-video-tablet-vertical');
+    videoTabletVertical.play();
 }
 
 arrowMobile = () => {
@@ -21,9 +24,22 @@ arrowMobile = () => {
   });
 }
 
+arrowTabletVertical = () => {
+  const arrowTabletVertical = document.getElementById('arrow-tablet-vertical');
+  const aboutTabletVertical = document.getElementById('about-tablet-vertical');
+  
+
+  arrowTabletVertical.addEventListener('click', (event) => {
+    event.preventDefault();
+    aboutTabletVertical.classList.add('active');
+  });
+}
+
 videoTrailer = () => {
     const trailerButton = document.getElementById('trailer-button');
+    const trailerButtonTabletVertical = document.getElementById('trailer-button-tablet');
     trailerButton.addEventListener('click', playVideoFullscreen);
+    trailerButtonTabletVertical.addEventListener('click', playVideoFullscreen);
   }
 
 isMobile = () => {
@@ -93,12 +109,18 @@ isMobile = () => {
 // Contact form
 document.addEventListener('DOMContentLoaded', function() {
     const contactLink = document.getElementById('contact-link');
+    const contactLinkTabletVertical = document.getElementById('contact-link-tablet');
     const contactOverlay = document.getElementById('contact-form-overlay');
     const closeButton = document.getElementById('close-contact-form');
     const contactForm = document.getElementById('contact-form');
     const result = document.getElementById('contact-result');
+
     // Open form
     contactLink.addEventListener('click', function(e) {
+        e.preventDefault();
+        contactOverlay.classList.add('active');
+    });
+    contactLinkTabletVertical.addEventListener('click', function(e) {
         e.preventDefault();
         contactOverlay.classList.add('active');
     });
