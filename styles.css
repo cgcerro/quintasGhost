@@ -67,7 +67,7 @@ body {
 /* Tablet vertical: 768px - 1023px */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .layout-tablet-vertical { display: block; }
-    .layout-tablet-horizontal, .layout-desktop { display: none !important; }
+    .layout-tablet-horizontal, .layout-desktop, .layout-mobile { display: none !important; }
 
     .project-title--tablet {
         background: #e5e5e5;
@@ -570,6 +570,9 @@ body {
         align-items: center;
         padding: 0 16px;
     }
+    .header__decor-mobile img {
+        height:20px;
+    }
     .header__logo-mobile {
         background: #f72608;
         padding:  0;
@@ -629,9 +632,17 @@ body {
         text-decoration: none;
     }
     .project-title__decor-mobile {
-        height: 24px;
-        background: repeating-linear-gradient(90deg, #fff 0 12px, #111 12px 24px);
+        height: 50px;
+        background-color: #fff;
+        overflow: hidden;
     }
+
+    .project-title__decor-mobile img  {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
     .claim-mobile {
         background: #f7a8b8;
         text-align: center;
@@ -663,7 +674,7 @@ body {
         color: #111;
         padding: 24px 16px;
         position: relative;
-        height: 500px;
+        height: 420px;
         overflow: hidden;
           
     }
@@ -671,7 +682,7 @@ body {
     .about-mobile .about-mobile__primary {
         position: absolute;
         width: 100%;
-        height: 500px;
+        height: 420px;
         top: 0;
         transition: transform 0.5s ease;
         transform: translateX(0);
@@ -681,7 +692,7 @@ body {
     .about-mobile .about-mobile__secondary {
         position: absolute;
         width: 100%;
-        height: 500px;
+        height: 420px;
         transform: translateX(100%);
         z-index: 1;
         transition: transform 0.5s ease;
@@ -693,6 +704,7 @@ body {
 
     .about-mobile.active .about-mobile__secondary {
         transform: translateX(0);
+        padding-right: 2.4rem;
     }
 
     .about-mobile .about-mobile__primary h1 {
@@ -746,17 +758,21 @@ body {
     }
     .footer__top-mobile {
         display: flex;
-        height: 64px;
     }
     .footer__decor-mobile {
-        background: #000;
+        background: #fff;
         width: 50%;
+        height: 180px;
+    }
+    .footer__decor-mobile  img{
+        width: 100%;
         height: 100%;
+        object-fit: cover;
+        
     }
     .footer__icon-mobile {
         background: #f7a8b8;
         width: 50%;
-        height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
