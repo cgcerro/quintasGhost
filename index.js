@@ -90,3 +90,37 @@ isMobile = () => {
       });
   };
 
+// Contact form
+document.addEventListener('DOMContentLoaded', function() {
+    const contactLink = document.getElementById('contact-link');
+    const contactOverlay = document.getElementById('contact-form-overlay');
+    const closeButton = document.getElementById('close-contact-form');
+    const contactForm = document.getElementById('contact-form');
+
+    // Open form
+    contactLink.addEventListener('click', function(e) {
+        e.preventDefault();
+        contactOverlay.classList.add('active');
+    });
+
+    // Close form
+    closeButton.addEventListener('click', function() {
+        contactOverlay.classList.remove('active');
+    });
+
+    // Close form when clicking outside
+    contactOverlay.addEventListener('click', function(e) {
+        if (e.target === contactOverlay) {
+            contactOverlay.classList.remove('active');
+        }
+    });
+
+    // Manejar envío del formulario
+    contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        // Aquí puedes añadir la lógica para enviar el formulario
+        alert('Formulario enviado correctamente');
+        contactOverlay.classList.remove('active');
+    });
+});
+
