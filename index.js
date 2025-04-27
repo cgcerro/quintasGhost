@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const contactOverlay = document.getElementById('contact-form-overlay');
     const closeButton = document.getElementById('close-contact-form');
     const contactForm = document.getElementById('contact-form');
-
+    const result = document.getElementById('contact-result');
     // Open form
     contactLink.addEventListener('click', function(e) {
         e.preventDefault();
@@ -117,9 +117,39 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Manejar envío del formulario
     contactForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        // Aquí puedes añadir la lógica para enviar el formulario
-        alert('Formulario enviado correctamente');
+      e.preventDefault();
+      const formData = new FormData(contactForm);
+      const object = Object.fromEntries(formData);
+      const json = JSON.stringify(object);
+      result.innerHTML = "Please wait..."
+    
+    fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: json
+        })
+        .then(async (response) => {
+            let json = await response.json();
+            if (response.status == 200) {
+                result.innerHTML = json.message;
+            } else {
+                console.log(response);
+                result.innerHTML = json.message;
+            }
+        })
+        .catch(error => {
+            console.log(error);
+            result.innerHTML = "Something went wrong!";
+        })
+        .then(function() {
+            contactForm.reset();
+            setTimeout(() => {
+                result.style.display = "none";
+            }, 3000);
+        });
         contactOverlay.classList.remove('active');
     });
 });
