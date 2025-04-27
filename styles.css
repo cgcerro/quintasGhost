@@ -317,6 +317,7 @@ body {
     .footer--tablet-vertical .footer_mail {
         display: flex;
         flex-direction: column;
+        background: #fff;
     }
 
     .footer--tablet-vertical .footer_mail .tablet_icon_mail {
