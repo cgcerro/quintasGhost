@@ -12,13 +12,12 @@ videoLogoPlay = () => {
 
 arrowMobile = () => {
   const arrowMobile = document.getElementById('arrow-mobile');
-  const initialViewMobile = document.getElementById('about-mobile-primary');
-  const secondaryViewMobile = document.getElementById('about-mobile-secondary');
+  const aboutMobile = document.getElementById('about-mobile');
+  
 
   arrowMobile.addEventListener('click', (event) => {
     event.preventDefault();
-    initialViewMobile.style.display = 'none'; // Oculta título y flecha
-    secondaryViewMobile.classList.add('active'); // Muestra el contenido desplazándose
+    aboutMobile.classList.add('active');
   });
 }
 

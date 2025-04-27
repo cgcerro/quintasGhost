@@ -382,7 +382,7 @@ body {
 /* Escritorio: 1280px o más */
 @media screen and (min-width: 1280px) {
     .layout-desktop { display: block; }
-    .layout-tablet-vertical, .layout-tablet-horizontal { display: none !important; }
+    .layout-tablet-vertical, .layout-tablet-horizontal, .layout-mobile { display: none !important; }
 
     .project-title--desktop {
         background: #e5e5e5;
@@ -649,28 +649,58 @@ body {
     }
     .central-decor-mobile {
         background: #d9d9d9;
-        height: 120px;
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    .central-decor-mobile img{
+        width: 100%;
     }
 
     .about-mobile {
         background: #f72608;
         color: #111;
         padding: 24px 16px;
-        display: flex ;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
         position: relative;
-        overflow-y: visible;
-        height: 26rem;
+        height: 500px;
+        overflow: hidden;
+          
     }
+
+    .about-mobile .about-mobile__primary {
+        position: absolute;
+        width: 100%;
+        height: 500px;
+        top: 0;
+        transition: transform 0.5s ease;
+        transform: translateX(0);
+        z-index: 2;
+    }
+  
+    .about-mobile .about-mobile__secondary {
+        position: absolute;
+        width: 100%;
+        height: 500px;
+        transform: translateX(100%);
+        z-index: 1;
+        transition: transform 0.5s ease;
+    }
+
+    .about-mobile.active .about-mobile__primary {
+        transform: translateX(-100%);
+    }
+
+    .about-mobile.active .about-mobile__secondary {
+        transform: translateX(0);
+    }
+
     .about-mobile .about-mobile__primary h1 {
         font-size: 200px;
         line-height: 180px;
-        font-family: 'FuturaNew';
+        font-family: FuturaNew;
+        text-align: center;
+        padding: 100px 0 0;
         font-style: italic;
     }
     .about-mobile .about-mobile__primary #arrow-mobile  {
@@ -682,21 +712,7 @@ body {
         cursor: pointer;
     }
    
-  
-    .about-mobile .about-mobile__secondary {
-        position: absolute;
-        top: 0;
-        right: -100%;
-        padding: 1.5rem;
-        width: 100%;
-        height: 500px;
-        transition: right 0.8s ease;
-        overflow-y: visible;
-    }
-
-    .about-mobile .about-mobile__secondary.active {
-        right: 0;
-    }
+    
 
     .about-mobile .about-mobile__secondary h2 {
         color: #111;
