@@ -121,9 +121,9 @@ document.addEventListener('DOMContentLoaded', function() {
       const formData = new FormData(contactForm);
       const object = Object.fromEntries(formData);
       const json = JSON.stringify(object);
-      result.innerHTML = "Please wait..."
+      result.innerHTML = "Enviando mensaje..."
     
-    fetch('https://api.web3forms.com/submit', {
+      fetch('https://api.web3forms.com/submit', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -135,6 +135,12 @@ document.addEventListener('DOMContentLoaded', function() {
             let json = await response.json();
             if (response.status == 200) {
                 result.innerHTML = json.message;
+                // Esperar 2 segundos antes de cerrar el formulario
+                setTimeout(() => {
+                    contactOverlay.classList.remove('active');
+                    contactForm.reset();
+                    result.innerHTML = "";
+                }, 2000);
             } else {
                 console.log(response);
                 result.innerHTML = json.message;
@@ -142,15 +148,8 @@ document.addEventListener('DOMContentLoaded', function() {
         })
         .catch(error => {
             console.log(error);
-            result.innerHTML = "Something went wrong!";
-        })
-        .then(function() {
-            contactForm.reset();
-            setTimeout(() => {
-                result.style.display = "none";
-            }, 3000);
+            result.innerHTML = "¡Algo salió mal! Por favor, inténtalo de nuevo.";
         });
-        contactOverlay.classList.remove('active');
     });
 });
 
