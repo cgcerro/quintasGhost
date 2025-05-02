@@ -826,29 +826,39 @@ body {
         background: #f72608;
         color: #111;
         position: relative;
-        height: 27rem;
         overflow: hidden;
-          
+        min-height: 27rem;
     }
 
     .about-mobile .about-mobile__primary {
         position: absolute;
-        width: 100%;
-        height: 27rem;
         top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: inherit;
+        justify-content: center;
         transition: transform 0.5s ease;
         transform: translateX(0);
         z-index: 2;
+        background: #f72608;
     }
   
     .about-mobile .about-mobile__secondary {
         position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
-        height: 27rem;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 1.5rem;
         transform: translateX(100%);
         z-index: 1;
         transition: transform 0.5s ease;
-        padding:1.5rem;
+        background: #f72608;
     }
 
     .about-mobile.active .about-mobile__primary {
@@ -857,28 +867,25 @@ body {
 
     .about-mobile.active .about-mobile__secondary {
         transform: translateX(0);
-        padding-right: 2.4rem;
     }
 
     .about-mobile .about-mobile__primary h1 {
-        font-size: 200px;
-        line-height: 180px;
+        font-size: 14rem;
+        line-height: 1;
         font-family: FuturaNew;
         text-align: center;
-        padding: 100px 0 0;
+        padding: 2rem 0;
         font-style: italic;
     }
-    .about-mobile .about-mobile__primary #arrow-mobile  {
-        font-size: 100px;
+
+    .about-mobile .about-mobile__primary #arrow-mobile {
+        font-size: 6rem;
         text-align: right;
         margin: 0;
         position: relative;
-        line-height: 50px;
         cursor: pointer;
-        right:4rem;
+        line-height: 1rem;
     }
-   
-    
 
     .about-mobile .about-mobile__secondary h2 {
         color: #111;
@@ -890,6 +897,7 @@ body {
         line-height: 2.3rem;
         padding: 0 0 0 8px;
     }
+
     .about-mobile__secondary #hr-about-mobile {
         border: none;
         height: 2px;
@@ -898,6 +906,7 @@ body {
         width: 20%;
         margin: 0 0 0 8px;
     }
+
     .about-mobile__secondary .about__text-mobile {
         color: #111;
         font-size: 1.15rem;
@@ -905,6 +914,7 @@ body {
         line-height: 1.3rem;
         padding: 0 0 0 8px;
     }
+
     .footer-mobile {
         background: #fff;
         color: #111;
