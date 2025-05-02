@@ -182,7 +182,6 @@ body {
     }
     .about-tablet-vertical {
         color: #111;
-        padding: 24px 16px;
         position: relative;
         height: 420px;
         overflow: hidden;
@@ -214,7 +213,7 @@ body {
 
     .about-tablet-vertical.active .about-tablet-vertical__secondary {
         transform: translateX(0);
-        padding-right: 2.4rem;
+        padding: 2rem;
     }
 
     .about-tablet-vertical .about-tablet-vertical__primary h1 {
