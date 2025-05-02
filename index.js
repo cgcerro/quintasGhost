@@ -4,12 +4,28 @@ window.addEventListener('load', function() {
     arrowTabletVertical();
     videoTrailer();
 });
+
+ isAppleDevice = () => {
+  const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+  const plataforma = navigator.platform;
+
+  const esIphone = /iPhone/.test(userAgent);
+  const esMac = /Mac/.test(plataforma);
+
+  return esIphone || esMac;
+}
   
 
 videoLogoPlay = () => {
     var video = document.getElementById('logo-video');
-    video.play();
     var videoTabletVertical = document.getElementById('logo-video-tablet-vertical');
+    // change video logo src, if is iphone or mac to logo.mov
+    if (isAppleDevice()) {
+        video.src = 'videos/logo.mov';
+        videoTabletVertical.src = 'videos/logo.mov';
+    }
+    
+    video.play();
     videoTabletVertical.play();
 }
 
