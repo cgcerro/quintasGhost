@@ -859,6 +859,7 @@ body {
         z-index: 1;
         transition: transform 0.5s ease;
         background: #f72608;
+        justify-content: center;
     }
 
     .about-mobile.active .about-mobile__primary {
@@ -889,12 +890,12 @@ body {
 
     .about-mobile .about-mobile__secondary h2 {
         color: #111;
-        font-size: 2.3rem;
+        font-size: 20px;
         font-weight: bold;
         margin-bottom: 8px;
         font-family: 'FuturaNew';
         font-style: italic;
-        line-height: 2.3rem;
+        line-height: 20px;
         padding: 0 0 0 8px;
     }
 
@@ -909,9 +910,9 @@ body {
 
     .about-mobile__secondary .about__text-mobile {
         color: #111;
-        font-size: 1.15rem;
+        font-size: 16px;
         margin-top: 8px;
-        line-height: 1.3rem;
+        line-height: 18px;
         padding: 0 0 0 8px;
     }
 
