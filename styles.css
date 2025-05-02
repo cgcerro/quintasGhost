@@ -827,7 +827,7 @@ body {
         color: #111;
         position: relative;
         overflow: hidden;
-        min-height: 27rem;
+        min-height: 340px;
     }
 
     .about-mobile .about-mobile__primary {
@@ -870,12 +870,11 @@ body {
         transform: translateX(0);
     }
 
-    .about-mobile .about-mobile__primary h1 {
-        font-size: 14rem;
+    .about-mobile .about-mobile__primary h1  {
+        font-size: 200px;
         line-height: 1;
         font-family: FuturaNew;
         text-align: center;
-        padding: 2rem 0;
         font-style: italic;
     }
 
@@ -886,6 +885,10 @@ body {
         position: relative;
         cursor: pointer;
         line-height: 1rem;
+    }
+
+    .about-mobile .about-mobile__primary #arrow-mobile img {
+        padding-right:50px;
     }
 
     .about-mobile .about-mobile__secondary h2 {
