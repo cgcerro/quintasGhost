@@ -358,21 +358,35 @@ body {
     .layout-tablet-horizontal { display: block; }
     .layout-tablet-vertical, .layout-desktop, .layout-mobile { display: none !important; }
 
+    .header__decor-mobile {
+        height: 32px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 16px;
+        background-color: #000;
+    }
+
+    .header__decor-mobile img {
+        height:20px;
+    }
+
     .project-title--tablet-horizontal {
         font-size: 1.5rem;
         padding: 0;
         background: #e5e5e5;
-        border-bottom: 8px solid #fff;
     }
     .project-title__text {
-        padding: 16px 0 16px 0;
-        font-size: 1.5rem;
+        padding: 5px 0;
+        font-size: 18px;
+        text-align: center;
+        letter-spacing: 10px;
     }
     .main-horizontal {
         display: flex;
         flex-direction: row;
         width: 100%;
-        min-height: 340px;
+        min-height: 300px;
         background: #fff;
     }
     .main-horizontal__left, .main-horizontal__center, .main-horizontal__right {
@@ -382,21 +396,33 @@ body {
         align-items: center;
     }
     .main-horizontal__left {
-        flex: 1 1 28%;
+        flex: 1 1 27%;
         background: #f72608;
         min-width: 220px;
         padding: 0;
+        display: flex;
     }
     .claim--horizontal {
-        background: transparent;
+        background: #f72608;
         color: #fff;
         text-align: left;
         font-size: 2.1rem;
         font-weight: bold;
-        margin: 32px 0 0 0;
-        padding: 0 0 24px 0;
+        /* margin: 32px 0 0 0; */
+        /* padding: 0 0 24px 0; */
         width: 100%;
         max-width: 320px;
+        flex: 1 1 50%;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+    }
+    .claim--horizontal h2  {
+        font-size: 35px;
+        line-height: 35px;
+        width: 80%;
+        margin: auto;
+        font-style: italic;
     }
     .main-horizontal__decor-left {
         background: #d9d9d9;
@@ -405,47 +431,72 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
+        flex: 1 1 50%;
     }
     .main-horizontal__center {
         flex: 1 1 44%;
-        min-width: 320px;
-        background: #fff;
-        padding: 0 16px;
+        
+        
+        
     }
     .main-horizontal__center .hero__image {
         width: 100%;
-        height: 260px;
-        background: #d9d9d9;
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
+        position: relative;
+     
+        height: 100%;
     }
+
+    .hero__image-mobile {
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .hero__image-mobile img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%
+    }
+
+    .hero__play-mobile {
+        position:absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+
     .main-horizontal__right {
-        flex: 1 1 28%;
+        flex: 1 1 29%;
         background: #fff;
         min-width: 180px;
         padding: 0;
     }
-    .main-horizontal__decor-right {
-        background: #111;
-        width: 100%;
-        height: 260px;
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
+
+    .main-horizontal__right img{
+        height: 101%;
+        object-fit: cover;
     }
+    
     .logo-bar--tablet-horizontal {
-        width: 100%;
+        /* width: 100%; */
         background: #f72608;
-        color: #fff;
+        /* color: #fff; */
         text-align: center;
-        font-size: 2.2rem;
-        font-weight: bold;
-        letter-spacing: 0.1em;
-        padding: 18px 0 8px 0;
-        font-family: 'Arial Black', Arial, sans-serif;
-        border-bottom: 8px solid #fff;
+        height: 100px;
+        /* font-size: 2.2rem; */
+        /* font-weight: bold; */
+        /* letter-spacing: 0.1em; */
+        /* padding: 18px 0 8px 0; */
+        /* font-family: 'Arial Black', Arial, sans-serif; */
+        /* border-bottom: 8px solid #fff; */
     }
+
+    #logo-video-tablet-horizontal {
+        height: 100px;
+    }
+
     .central-horizontal {
         width: 100%;
         background: #fff;
@@ -457,7 +508,7 @@ body {
     .central-horizontal__band {
         width: 100%;
         height: 40px;
-        background: repeating-linear-gradient(90deg, #fff 0 24px, #111 24px 48px);
+        background: url('./elements/circles.svg') repeat center center;
     }
     .central-horizontal__bottom {
         display: flex;
@@ -467,28 +518,41 @@ body {
         background: #fff;
     }
     .central-horizontal__left {
-        flex: 1 1 40%;
-        background: #d9d9d9;
+        flex: 1 1 27%;
+        background: #fff;
         display: flex;
         align-items: center;
         justify-content: center;
         min-width: 220px;
-        padding: 32px 0;
+        flex-direction: column;
     }
-    .central-horizontal__decor {
+
+    .central-horizontal__decor_1 {
         width: 100%;
-        height: 160px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        background: url('./elements/circles.svg') repeat left top;
+        height: 100px;
+    }
+    .central-horizontal__decor_2 {
+        width: 100%;
+        height: 291px;
+        background: #d9d9d9;
+    }
+    .central-horizontal__decor_2 img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
     }
     .central-horizontal__right {
-        flex: 1 1 60%;
+        flex: 1 1 29%;
         background: #f7a8b8;
-        padding: 32px 24px;
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+    .central-horizontal__middle {
+        flex: 1 1 44%;
+        background-color: #f7a8b8;
     }
     .about--tablet-horizontal {
         background: transparent;
@@ -533,6 +597,90 @@ body {
         padding: 18px 0 20px 0;
         color: #111;
         background: #fff;
+    }
+
+    .about-tablet-horizontal {
+        color: #111;
+        position: relative;
+        height: 390px;
+        overflow: hidden;
+          
+    }
+
+    .about-tablet-horizontal .about-tablet-horizontal__primary {
+        position: absolute;
+        width: 100%;
+        height: 390px;
+        top: 0;
+        transition: transform 0.5s ease;
+        transform: translateX(0);
+        z-index: 2;
+    }
+  
+    .about-tablet-horizontal .about-tablet-horizontal__secondary {
+        position: absolute;
+        width: 100%;
+        height: 390px;
+        transform: translateX(100%);
+        z-index: 1;
+        transition: transform 0.5s ease;
+    }
+
+    .about-tablet-horizontal.active .about-tablet-horizontal__primary {
+        transform: translateX(-100%);
+    }
+
+    .about-tablet-horizontal.active .about-tablet-horizontal__secondary {
+        transform: translateX(0);
+        padding: 2rem;
+    }
+
+    .about-tablet-horizontal .about-tablet-horizontal__primary h1 {
+        font-size: 200px;
+        line-height: 180px;
+        font-family: FuturaNew;
+        text-align: center;
+        padding: 100px 0 0;
+        font-style: italic;
+    }
+    .about-tablet-horizontal .about-tablet-horizontal__primary #arrow-tablet-horizontal  {
+        font-size: 100px;
+        text-align: right;
+        margin: 0;
+        position: relative;
+        line-height: 50px;
+        cursor: pointer;
+        color: #f72608;
+        padding-right: 2.5rem;
+        font-family: 'FuturaNew';
+    }
+   
+    
+
+    .about-tablet-horizontal .about-tablet-horizontal__secondary h2 {
+        color: #111;
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 8px;
+        font-family: 'FuturaNew';
+        font-style: italic;
+        line-height: 1.4rem;
+        padding: 0 0 0 8px;
+    }
+    .about-tablet-horizontal__secondary #hr-about-tablet-horizontal {
+        border: none;
+        height: 2px;
+        background: #f72608;
+        color: #f72608;
+        width: 20%;
+        margin: 0 0 0 8px;
+    }
+    .about-tablet-horizontal__secondary .about__text-tablet-horizontal {
+        color: #111;
+        font-size: 1.1rem;
+        margin-top: 8px;
+        line-height: 1.15rem;
+        padding: 0 0 0 8px;
     }
 }
 
