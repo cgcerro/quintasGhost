@@ -359,7 +359,7 @@ body {
     .layout-tablet-vertical, .layout-desktop, .layout-mobile { display: none !important; }
 
     .header__decor-mobile {
-        height: 32px;
+        height: 28px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -377,16 +377,17 @@ body {
         background: #e5e5e5;
     }
     .project-title__text {
-        padding: 5px 0;
-        font-size: 18px;
+        padding: 5px 0 3px 0;
+        font-size: 14px;
         text-align: center;
         letter-spacing: 10px;
+        line-height: 14px;
     }
     .main-horizontal {
         display: flex;
         flex-direction: row;
         width: 100%;
-        min-height: 300px;
+        min-height: 275px;
         background: #fff;
     }
     .main-horizontal__left, .main-horizontal__center, .main-horizontal__right {
@@ -396,7 +397,7 @@ body {
         align-items: center;
     }
     .main-horizontal__left {
-        flex: 1 1 27%;
+        flex: 1 1 25%;
         background: #f72608;
         min-width: 220px;
         padding: 0;
@@ -468,7 +469,7 @@ body {
     
 
     .main-horizontal__right {
-        flex: 1 1 29%;
+        flex: 1 1 25%;
         background: #fff;
         min-width: 180px;
         padding: 0;
@@ -484,7 +485,7 @@ body {
         background: #f72608;
         /* color: #fff; */
         text-align: center;
-        height: 100px;
+        height: 80px;
         /* font-size: 2.2rem; */
         /* font-weight: bold; */
         /* letter-spacing: 0.1em; */
@@ -494,7 +495,7 @@ body {
     }
 
     #logo-video-tablet-horizontal {
-        height: 100px;
+        height: 80px;
     }
 
     .central-horizontal {
@@ -518,7 +519,7 @@ body {
         background: #fff;
     }
     .central-horizontal__left {
-        flex: 1 1 27%;
+        flex: 1 1 25%;
         background: #fff;
         display: flex;
         align-items: center;
@@ -534,18 +535,17 @@ body {
     }
     .central-horizontal__decor_2 {
         width: 100%;
-        height: 291px;
+        height: 230px;
         background: #d9d9d9;
     }
     .central-horizontal__decor_2 img{
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        object-fit: contain;
 
     }
     .central-horizontal__right {
-        flex: 1 1 29%;
-        background: #f7a8b8;
+        flex: 1 1 25%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -553,6 +553,28 @@ body {
     .central-horizontal__middle {
         flex: 1 1 44%;
         background-color: #f7a8b8;
+    }
+    .central-horizontal__contact {
+        background-color: #f72608;
+        height: 80px;
+        
+            display: flex       ;
+            justify-content: center;
+            align-items: center;
+        
+    }
+    .central-horizontal__contact img {
+        display: block;
+        height: 60px;
+    }
+    .central-horizontal__decor_3 {
+        background-color: #d9d9d9;
+        height: 250px;
+    }
+    .central-horizontal__decor_3 img {
+        width: 100%;
+        height: 101%;
+        object-fit: cover;
     }
     .about--tablet-horizontal {
         background: transparent;
@@ -593,16 +615,16 @@ body {
     .footer--tablet-horizontal .footer__bottom {
         text-align: center;
         letter-spacing: 0.2em;
-        font-size: 1.1rem;
-        padding: 18px 0 20px 0;
-        color: #111;
-        background: #fff;
+        font-size: 14px;
+        padding: 6px 0 6px 0;
+        color: #fff;
+        background: #000;
     }
 
     .about-tablet-horizontal {
         color: #111;
         position: relative;
-        height: 390px;
+        height: 330px;
         overflow: hidden;
           
     }
@@ -610,7 +632,7 @@ body {
     .about-tablet-horizontal .about-tablet-horizontal__primary {
         position: absolute;
         width: 100%;
-        height: 390px;
+        height: 330px;
         top: 0;
         transition: transform 0.5s ease;
         transform: translateX(0);
@@ -620,7 +642,7 @@ body {
     .about-tablet-horizontal .about-tablet-horizontal__secondary {
         position: absolute;
         width: 100%;
-        height: 390px;
+        height: 330px;
         transform: translateX(100%);
         z-index: 1;
         transition: transform 0.5s ease;
@@ -640,7 +662,7 @@ body {
         line-height: 180px;
         font-family: FuturaNew;
         text-align: center;
-        padding: 100px 0 0;
+        padding: 70px 0 0;
         font-style: italic;
     }
     .about-tablet-horizontal .about-tablet-horizontal__primary #arrow-tablet-horizontal  {
@@ -689,13 +711,25 @@ body {
     .layout-desktop { display: block; }
     .layout-tablet-vertical, .layout-tablet-horizontal, .layout-mobile { display: none !important; }
 
+    .header__decor-mobile {
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 16px;
+        background: #000;
+    }
+    .header__decor-mobile img {
+        height:25px;
+    }
+
     .project-title--desktop {
         background: #e5e5e5;
+        width: 100%;
         text-align: center;
         padding: 0;
         font-size: 1.6rem;
-        border-bottom: 8px solid #fff;
-        letter-spacing: 0.15em;
+        letter-spacing: 0.5rem;
         text-transform: uppercase;
     }
     .project-title__text {
