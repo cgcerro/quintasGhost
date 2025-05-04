@@ -733,7 +733,7 @@ body {
         text-transform: uppercase;
     }
     .project-title__text {
-        padding: 18px 0 18px 0;
+        padding: 10px 0;
         font-size: 1.6rem;
         font-family: 'Arial Black', Arial, sans-serif;
         background: #e5e5e5;
@@ -749,12 +749,22 @@ body {
     }
     .main-desktop__left {
         flex: 1 1 33%;
-        background: #000;
+        background: #f72608;
         min-width: 340px;
-        display: flex;
+        height: 650px;
+        display: flex
+;
         align-items: flex-end;
         justify-content: center;
         position: relative;
+        min-width: 635px;
+        overflow: hidden;
+    }
+    .main-desktop__left img {
+        height: 590px;
+        /* width: 100%; */
+        position: absolute;
+        bottom: 0;
     }
     .main-desktop__center {
         flex: 1 1 34%;
@@ -767,7 +777,7 @@ body {
     }
     .main-desktop__center .hero__image {
         width: 100%;
-        height: 320px;
+        height: 440px;
         background: #d9d9d9;
         display: flex;
         align-items: flex-end;
@@ -784,7 +794,7 @@ body {
         letter-spacing: 0.1em;
         padding: 18px 0 8px 0;
         font-family: 'Arial Black', Arial, sans-serif;
-        border-bottom: 8px solid #fff;
+        min-height: 150px;
     }
     .main-desktop__right {
         flex: 1 1 33%;
