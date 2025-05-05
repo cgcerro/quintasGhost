@@ -19,14 +19,20 @@ window.addEventListener('load', function() {
 videoLogoPlay = () => {
     var video = document.getElementById('logo-video');
     var videoTabletVertical = document.getElementById('logo-video-tablet-vertical');
+    var videoTabletHorizontal = document.getElementById('logo-video-tablet-horizontal');
+    var videoDesktop = document.getElementById('logo-video-desktop');
     // change video logo src, if is iphone or mac to logo.mov
     if (isAppleDevice()) {
         video.src = 'videos/logo.mov';
         videoTabletVertical.src = 'videos/logo.mov';
+        videoTabletHorizontal.src = 'videos/logo.mov';
+        videoDesktop.src = 'videos/logo.mov';
     }
     
     video.play();
     videoTabletVertical.play();
+    videoTabletHorizontal.play();
+    videoDesktop.play();
 }
 
 arrowMobile = () => {
