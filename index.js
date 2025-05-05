@@ -2,6 +2,7 @@ window.addEventListener('load', function() {
     videoLogoPlay();
     arrowMobile();
     arrowTabletVertical();
+    arrowDesktop();
     videoTrailer();
 });
 
@@ -57,11 +58,38 @@ arrowTabletVertical = () => {
   });
 }
 
+arrowTabletHorizontal = () => {
+  const arrowTabletHorizontal = document.getElementById('arrow-tablet-horizontal');
+  const aboutTabletHorizontal = document.getElementById('about-tablet-horizontal');
+  
+
+  arrowTabletHorizontal.addEventListener('click', (event) => {
+    event.preventDefault();
+    aboutTabletHorizontal.classList.add('active');
+  });
+}
+
+arrowDesktop = () => {
+  const arrowDesktop = document.getElementById('arrow-desktop');
+  const aboutDesktop = document.getElementById('about-desktop');
+  
+
+  arrowDesktop.addEventListener('click', (event) => {
+    event.preventDefault();
+    aboutDesktop.classList.add('active');
+  });
+}
+
 videoTrailer = () => {
     const trailerButton = document.getElementById('trailer-button');
     const trailerButtonTabletVertical = document.getElementById('trailer-button-tablet');
+    const trailerButtonTabletHorizontal = document.getElementById('trailer-button-tablet-horizontal');
+    const trailerButtonDesktop = document.getElementById('trailer-button-desktop');
+
     trailerButton.addEventListener('click', playVideoFullscreen);
     trailerButtonTabletVertical.addEventListener('click', playVideoFullscreen);
+    trailerButtonTabletHorizontal.addEventListener('click', playVideoFullscreen);
+    trailerButtonDesktop.addEventListener('click', playVideoFullscreen);
   }
 
 isMobile = () => {
@@ -132,6 +160,9 @@ isMobile = () => {
 document.addEventListener('DOMContentLoaded', function() {
     const contactLink = document.getElementById('contact-link');
     const contactLinkTabletVertical = document.getElementById('contact-link-tablet');
+    const contactLinkTabletHorizontal = document.getElementById('contact-link-tablet-horizontal');
+    const contactLinkDesktop = document.getElementById('contact-link-desktop');
+
     const contactOverlay = document.getElementById('contact-form-overlay');
     const closeButton = document.getElementById('close-contact-form');
     const contactForm = document.getElementById('contact-form');
@@ -143,6 +174,14 @@ document.addEventListener('DOMContentLoaded', function() {
         contactOverlay.classList.add('active');
     });
     contactLinkTabletVertical.addEventListener('click', function(e) {
+        e.preventDefault();
+        contactOverlay.classList.add('active');
+    });
+    contactLinkTabletHorizontal.addEventListener('click', function(e) {
+        e.preventDefault();
+        contactOverlay.classList.add('active');
+    });
+    contactLinkDesktop.addEventListener('click', function(e) {
         e.preventDefault();
         contactOverlay.classList.add('active');
     });
