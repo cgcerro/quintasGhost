@@ -2,6 +2,7 @@ window.addEventListener('load', function() {
     videoLogoPlay();
     arrowMobile();
     arrowTabletVertical();
+    arrowTabletHorizontal();
     arrowDesktop();
     videoTrailer();
 });
