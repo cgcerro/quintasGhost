@@ -1080,7 +1080,7 @@ body {
         padding: 0;
     }
     .header__decor-mobile {
-        height: 32px;
+        height: 42px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -1092,7 +1092,7 @@ body {
     .header__logo-mobile {
         background: #f72608;
         padding:  0;
-        height: 100px;
+        height: 90px;
         overflow: hidden;
         display: flex;
         align-items: center;
@@ -1125,10 +1125,12 @@ body {
         display: flex;
         align-items: flex-end;
         justify-content: center;
+        height: 400px;
     }
     .hero__image-mobile img {
         width: 100%;
-        height: auto;
+        height: 100%;
+        object-fit: cover;
     }
     
     .project-title-mobile {
@@ -1163,7 +1165,12 @@ body {
         background: #f7a8b8;
         text-align: center;
         padding: 0;
+        height: 160px;
+        display: flex
+;
+        align-items: center;
     }
+
     .claim-mobile h2   {
         font-size: 2.2rem;
         font-weight: bold;
@@ -1190,7 +1197,7 @@ body {
         color: #111;
         position: relative;
         overflow: hidden;
-        min-height: 340px;
+        min-height: 470px;
     }
 
     .about-mobile .about-mobile__primary {
@@ -1234,11 +1241,12 @@ body {
     }
 
     .about-mobile .about-mobile__primary h1  {
-        font-size: 200px;
+        font-size: 240px;
         line-height: 1;
         font-family: FuturaNew;
         text-align: center;
         font-style: italic;
+        font-weight: 900;
     }
 
     .about-mobile .about-mobile__primary #arrow-mobile {
@@ -1256,30 +1264,30 @@ body {
 
     .about-mobile .about-mobile__secondary h2 {
         color: #111;
-        font-size: 20px;
-        font-weight: bold;
+        font-size: 35px;
+        font-weight: 900;
         margin-bottom: 8px;
         font-family: 'FuturaNew';
         font-style: italic;
-        line-height: 20px;
-        padding: 0 0 0 8px;
+        line-height: 35px;
+     
     }
 
     .about-mobile__secondary #hr-about-mobile {
-        border: none;
+        border: 2px;
         height: 2px;
         background: #fff;
         color: #fff;
-        width: 20%;
-        margin: 0 0 0 8px;
+        width: 15%;
+        margin: 8px 0 8px 0;
     }
 
     .about-mobile__secondary .about__text-mobile {
         color: #111;
-        font-size: 16px;
+        font-size: 18px;
         margin-top: 8px;
-        line-height: 18px;
-        padding: 0 0 0 8px;
+        line-height: 20px;
+        padding: 0 20px 0 0;
     }
 
     .footer-mobile {
@@ -1293,7 +1301,7 @@ body {
     .footer__decor-mobile {
         background: #fff;
         width: 50%;
-        height: 180px;
+        height: 190px;
     }
     .footer__decor-mobile  img{
         width: 100%;

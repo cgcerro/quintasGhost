@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="73.429825mm"
+   height="59.438999mm"
+   viewBox="0 0 73.429825 59.438999"
+   version="1.1"
+   id="svg667"
+   sodipodi:docname="r_i_mobile.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview669"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.69664703"
+     inkscape:cx="-391.87707"
+     inkscape:cy="282.06537"
+     inkscape:window-width="1920"
+     inkscape:window-height="1016"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs664" />
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-63.697635,-36.973)">
+    <g
+       id="g978">
+      <path
+         id="Trazado_66"
+         data-name="Trazado 66"
+         class="cls-3"
+         d="m 435.05,171.5 c 10.67,-6.1 29.2,-27.6 29.2,-55.2 0,-53.26 -39.56,-89.22 -91.7,-89.22 H 283.7 v 224.65 h 178.36 v -27.29 c 0,-25.99 -10.06,-42.66 -27.01,-52.95 m -75.37,-26.76 v 0 -77.05 0 c 0,21.28 16.88,38.53 37.7,38.53 -20.82,0 -37.7,17.25 -37.7,38.53"
+         transform="matrix(0.26458333,0,0,0.26458333,-11.364657,29.808317)" />
+      <rect
+         style="fill:#ff1900;fill-rule:evenodd;stroke-width:0.264583;fill-opacity:1"
+         id="rect32"
+         width="26.821308"
+         height="14.301564"
+         x="110.35957"
+         y="36.973" />
+      <path
+         class="cls-3"
+         d="M 123.84536,48.076127 C 123.85596,41.967344 117.84726,37.00558 110.41247,36.973 h -0.0529 v 59.439 h 26.76789 V 36.977344 c -7.36335,0.09775 -13.29266,5.031276 -13.28208,11.098783 z"
+         id="path27"
+         style="fill:#010101;stroke-width:0.239746" />
+    </g>
+    <g
+       id="Grupo_79"
+       data-name="Grupo 79"
+       transform="matrix(0.26458333,0,0,0.26458333,-11.364656,29.808317)">
+      <g
+         id="Grupo_78"
+         data-name="Grupo 78" />
+    </g>
+  </g>
+</svg>
