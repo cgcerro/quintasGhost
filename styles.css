@@ -449,6 +449,7 @@ body {
         width: 80%;
         margin: auto;
         font-style: italic;
+        font-weight: 900;
     }
     .main-horizontal__decor-left {
         background: #d9d9d9;
@@ -517,10 +518,15 @@ body {
         /* padding: 18px 0 8px 0; */
         /* font-family: 'Arial Black', Arial, sans-serif; */
         /* border-bottom: 8px solid #fff; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
     }
 
     #logo-video-tablet-horizontal {
-        height: 80px;
+        height: 200px !important;
     }
 
     .central-horizontal {
@@ -689,6 +695,7 @@ body {
         text-align: center;
         padding: 70px 0 0;
         font-style: italic;
+        font-weight: 900;
     }
     .about-tablet-horizontal .about-tablet-horizontal__primary #arrow-tablet-horizontal  {
         font-size: 100px;
