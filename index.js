@@ -8,14 +8,18 @@ window.addEventListener('load', function() {
 });
 
  isAppleDevice = () => {
-  const userAgent = navigator.userAgent || navigator.vendor || window.opera;
-  const plataforma = navigator.platform;
-
-  const esIphone = /iPhone/.test(userAgent);
-  const esMac = /Mac/.test(plataforma);
-
-  return esIphone || esMac;
+  return [
+    'iPad Simulator',
+    'iPhone Simulator',
+    'iPod Simulator',
+    'iPad',
+    'iPhone',
+    'iPod'
+  ].includes(navigator.platform)
+  // iPad on iOS 13 detection
+  || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
 }
+
   
 
 videoLogoPlay = () => {
