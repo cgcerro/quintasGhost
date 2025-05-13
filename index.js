@@ -27,18 +27,26 @@ videoLogoPlay = () => {
     var videoTabletVertical = document.getElementById('logo-video-tablet-vertical');
     var videoTabletHorizontal = document.getElementById('logo-video-tablet-horizontal');
     var videoDesktop = document.getElementById('logo-video-desktop');
-    // change video logo src, if is iphone or mac to logo.mov
-    if (isAppleDevice()) {
-        video.src = 'videos/logo.mov';
-        videoTabletVertical.src = 'videos/logo.mov';
-        videoTabletHorizontal.src = 'videos/logo.mov';
-        videoDesktop.src = 'videos/logo.mov';
-    }
+   
     
-    video.play();
-    videoTabletVertical.play();
-    videoTabletHorizontal.play();
-    videoDesktop.play();
+   
+    const imageLogo = document.createElement('img');
+    imageLogo.src = 'videos/logo.gif';
+
+    video.replaceWith(imageLogo);
+
+    const imageLogoTabletVertical = document.createElement('img');
+    imageLogoTabletVertical.src = 'videos/logo.gif';
+
+    videoTabletVertical.replaceWith(imageLogoTabletVertical);
+
+    const imageLogoTabletHorizontal = document.createElement('img');
+    imageLogoTabletHorizontal.src = 'videos/logo.gif';
+    videoTabletHorizontal.replaceWith(imageLogoTabletHorizontal);
+
+    const imageLogoTabletDesktop = document.createElement('img');
+    imageLogoTabletDesktop.src = 'videos/logo.gif';
+    videoDesktop.replaceWith(imageLogoTabletDesktop);
 }
 
 arrowMobile = () => {
@@ -125,7 +133,7 @@ isMobile = () => {
 
     // Crear el video dinámicamente
     const trailerVideo = document.createElement('video');
-    trailerVideo.src = 'videos/logo.webm'; // <-- tu ruta
+    trailerVideo.src = 'videos/teaser.mov'; // <-- tu ruta
     trailerVideo.controls = true;
     trailerVideo.style.position = 'fixed';
     trailerVideo.style.top = '0';
@@ -146,6 +154,14 @@ isMobile = () => {
       openFullscreen(trailerVideo);
     
       trailerVideo.play();
+
+      window.addEventListener("orientationchange", function() {
+        trailerVideo.style.position = 'fixed';
+        trailerVideo.style.top = '0';
+        trailerVideo.style.left = '0';
+        trailerVideo.style.width = '100%';
+        trailerVideo.style.height = '100%';
+      });
     
       // Cuando el vídeo termina o el usuario sale del fullscreen, quitarlo
       function cleanup() {
